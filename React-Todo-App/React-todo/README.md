@@ -35,7 +35,3 @@ npm run preview
 - `src/` - application source
 - `src/components/` - React components (e.g. `TodoItem.tsx`)
 
-## Notes
-
-This README was added automatically. Feel free to expand with usage, testing, or deployment instructions.
-
