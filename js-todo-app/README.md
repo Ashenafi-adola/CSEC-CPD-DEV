@@ -42,16 +42,9 @@ js-todo-app/
 - Button hover effects for better user experience
 - Responsive form and input styling
 
-## Usage
+## Screenshot
+<img width="1919" height="1079" alt="Screenshot 2026-07-24 185610" src="https://github.com/user-attachments/assets/7d401be3-b423-45c2-af30-eb89175633ce" />
 
-1. Open `index.html` in a web browser
-2. Type a task description in the input field
-3. Click the "Add Task" button to add the task to your list
-4. Click on any task to remove it
-
-## Getting Started
-
-No installation or dependencies required! Simply open the `index.html` file in any modern web browser and start using the app.
 
 ## Browser Compatibility
 
@@ -60,12 +53,3 @@ Works with all modern web browsers that support:
 - CSS Flexbox
 - DOM manipulation APIs
 
-## Future Enhancements
-
-Potential improvements for future versions:
-- Task persistence using localStorage
-- Edit task functionality
-- Mark tasks as complete without deleting
-- Task priority levels
-- Due dates and reminders
-- Dark mode toggle
