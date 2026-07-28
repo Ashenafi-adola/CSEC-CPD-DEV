@@ -3,17 +3,20 @@ import TodoItem from './components/TodoItem'
 import './App.css'
 
 interface Item{
+  id: number,
   title: string,
   completion: boolean
 }
 
 function App() {
-  const [item , setItem] = useState<Item>({title:"", completion:false});
+  const [item , setItem] = useState<Item>({id:0,title:"", completion:false});
   const [items, setItems] = useState<Item[]>([])
+  const [id, setId] = useState(0)
 
 
   const titleSetter = (e:any) =>{
     setItem({
+      id: id,
       title: e.target.value,
       completion: false
     })
@@ -23,13 +26,15 @@ function App() {
     e.preventDefault();
     if (item.title !== ""){
       setItems(prev => [...prev, item]);
-      setItem({title:"", completion:false})
+      setItem({id:id, title:"", completion:false})
+      setId(prev => prev+1)
     }
   }
 
   return (
     <>
       <div className='container'>
+        <h1>React Todo App</h1>
         <div className='main-form-card'>
           <form onSubmit={addItem} className='main-form'>
             <input type="text" value={item.title} onChange={titleSetter}/>

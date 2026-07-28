@@ -2,6 +2,7 @@ import { useState } from "react";
 import "../App.css"
 
 interface Item{
+    id: number,
     title: string,
     completion: boolean,
 }
@@ -31,7 +32,7 @@ const TodoItem = (props: props) => {
     }
 
     const deleteItem = () => {
-        props.setItems((prev: Item[]) => prev.filter((i:Item )=> i !== item))
+        props.setItems((prev: Item[]) => prev.filter((i:Item )=> i.id !== item.id))
     }
     return(
         <div className="item">
