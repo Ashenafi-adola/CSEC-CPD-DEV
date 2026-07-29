@@ -3,14 +3,14 @@ import Image from 'next/image'
 
 const JobCard = () => {
   return (
-    <div className='bg-white p-3 m-10 rounded-3xl text-black flex shadow'>
+    <div className='bg-white p-3 m-10 rounded-3xl text-black flex shadow border border-gray-200'>
       <div className='w-20'>
         <div className='bg-gray-200 w-15 h-15 rounded-full'>
             
         </div>
       </div>
       <div className='flex flex-col gap-1 ml-1'>
-        <div className='border-b border-gray-400'>
+        <div className='border-b border-gray-300'>
           <h3 className='font-bold'>Social Media Assistant</h3>
           <div>
             <span className='text-xs text-gray-700 mr-2'>Young Men Cristians Association</span>
