@@ -51,7 +51,7 @@ function App() {
               </div>
               ):(
                 items.map(i => (
-                  <TodoItem key={i.title} i={i} setItems={setItems}/>
+                  <TodoItem key={i.id} i={i} setItems={setItems}/>
                 ))
             )
           }
