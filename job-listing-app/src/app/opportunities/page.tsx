@@ -1,7 +1,20 @@
-import React from 'react'
+'use client'
+import React, { useEffect, useState } from 'react'
 import JobCard from '@/components/JobCard'
+import axios from 'axios'
 
 const Opportunities = () => {
+  const [opportunities, setOpportunities] = useState([])
+
+  useEffect(()=>{
+    axios.get("https://akil-backend.onrender.com/opportunities/search")
+    .then(res=>{
+      console.log(res.data);
+    })
+    .catch(error=>{
+      console.log(error)
+    })
+  })
   return (
     <div className='bg-white text-black px-20'>
       <div className='flex justify-between m-5 p-5 items-center'>
